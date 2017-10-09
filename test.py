@@ -1,4 +1,4 @@
-if [[ `git status --porcelain` ]]; then
+if [[ `git status -uno` ]]; then
   git add .
   git commit -am "server changes"
   git pull origin master
